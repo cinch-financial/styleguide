@@ -7,10 +7,22 @@
         <exclude name="NoDef"/>
     </ruleset-ref>
     <ruleset-ref path="rulesets/design.xml"/>
-    <ruleset-ref path="rulesets/dry.xml"/>
+    <ruleset-ref path="rulesets/dry.xml">
+        <rule-config name='DuplicateStringLiteral'>
+            <property name='ignoreStrings' value=", "/>
+        </rule-config>
+    </ruleset-ref>
     <ruleset-ref path="rulesets/enhanced.xml"/>
     <ruleset-ref path="rulesets/exceptions.xml"/>
-    <ruleset-ref path="rulesets/formatting.xml"/>
+    <ruleset-ref path="rulesets/formatting.xml">
+       <rule-config name='SpaceAroundMapEntryColon'>
+            <property name='characterBeforeColonRegex' value='.'/>
+            <property name='characterAfterColonRegex' value='\s'/>
+        </rule-config>
+         <rule-config name='LineLength'>
+            <property name='length' value='300'/>
+        </rule-config>
+    </ruleset-ref>
     <ruleset-ref path="rulesets/generic.xml"/>
     <ruleset-ref path="rulesets/groovyism.xml"/>
     <ruleset-ref path="rulesets/imports.xml">
