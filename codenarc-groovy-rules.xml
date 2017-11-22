@@ -5,6 +5,7 @@
     <ruleset-ref path="rulesets/concurrency.xml"/>
     <ruleset-ref path="rulesets/convention.xml">
         <exclude name="NoDef"/>
+        <exclude name="TrailingComma" />
     </ruleset-ref>
     <ruleset-ref path="rulesets/design.xml"/>
     <ruleset-ref path="rulesets/dry.xml">
